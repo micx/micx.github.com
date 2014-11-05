@@ -6,9 +6,77 @@
     <atom:link href="place_your_blog_url_here/rss.xml" rel="self" type="application/rss+xml" />
     <description>place_your_blog_description_here</description>
     <language>place_your_blog_language_here</language>
-    <pubDate>Tue, 04 Nov 2014 20:57:29 +0800</pubDate>
-    <lastBuildDate>Tue, 04 Nov 2014 20:57:29 +0800</lastBuildDate>
+    <pubDate>Wed, 05 Nov 2014 20:17:00 +0800</pubDate>
+    <lastBuildDate>Wed, 05 Nov 2014 20:17:00 +0800</lastBuildDate>
 
+    
+    <item>
+      <title>Java对象序列化</title>
+      <link>place_your_blog_url_here/java%E6%8A%80%E6%9C%AF/2014/11/04/hello.html</link>
+      <pubDate>04 Nov 2014</pubDate>
+      <author>place_your_name_here</author>
+      <guid>place_your_blog_url_here/java%E6%8A%80%E6%9C%AF/2014/11/04/hello</guid>
+      <description>&lt;p&gt;&lt;img src=&quot;/assets/img/avatar.png&quot; alt=&quot;Alt text&quot;&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ihubo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;nickName&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;草依山&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;site&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;http://jser.me&amp;quot;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;1.什么是Java对象序列化&lt;/h3&gt;
+
+&lt;p&gt;Java平台允许我们在内存中创建可复用的Java对象，但一般情况下，只有当JVM处于运行时，这些对象才可能存在，即，这些对象的生命周期不会比JVM的生命周期更长。但在现实应用中，就可能要求在JVM停止运行之后能够保存(持久化)指定的对象，并在将来重新读取被保存的对象。Java对象序列化就能够帮助我们实现该功能。&lt;/p&gt;
+
+&lt;p&gt;使用Java对象序列化，在保存对象时，会把其状态保存为一组字节，在未来，再将这些字节组装成对象。必须注意地是，对象序列化保存的是对象的&amp;quot;状态&amp;quot;，即它的成员变量。由此可知，对象序列化不会关注类中的静态变量。&lt;/p&gt;
+
+&lt;p&gt;除了在持久化对象时会用到对象序列化之外，当使用RMI(远程方法调用)，或在网络中传递对象时，都会用到对象序列化。Java序列化API为处理对象序列化提供了一个标准机制，该API简单易用，在本文的后续章节中将会陆续讲到。&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;enum&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Gender&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;MALE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FEMALE&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;h2&gt;这是一个标题。&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;  这是第一行列表项。&lt;/li&gt;
+&lt;li&gt;  这是第二行列表项。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;给出一些例子代码：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;return shell_exec(&amp;quot;echo $input | $markdown_script&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;hr&gt;
+&lt;/blockquote&gt;
+
+&lt;hr&gt;
+
+&lt;hr&gt;
+
+&lt;hr&gt;
+
+&lt;hr&gt;
+
+&lt;ul&gt;
+&lt;li&gt;  Red&lt;/li&gt;
+&lt;li&gt;  Green&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Blue&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Red&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Green&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Blue&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+&lt;li&gt; Bird&lt;/li&gt;
+&lt;li&gt; McHale&lt;/li&gt;
+&lt;li&gt; Parish&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;一列表项包含一个列表区块：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;hello world
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
   </channel>
 </rss>
