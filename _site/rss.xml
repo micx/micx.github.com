@@ -6,8 +6,8 @@
     <atom:link href="place_your_blog_url_here/rss.xml" rel="self" type="application/rss+xml" />
     <description>place_your_blog_description_here</description>
     <language>place_your_blog_language_here</language>
-    <pubDate>Thu, 06 Nov 2014 14:51:15 +0800</pubDate>
-    <lastBuildDate>Thu, 06 Nov 2014 14:51:15 +0800</lastBuildDate>
+    <pubDate>Thu, 06 Nov 2014 17:30:58 +0800</pubDate>
+    <lastBuildDate>Thu, 06 Nov 2014 17:30:58 +0800</lastBuildDate>
 
     
     <item>
@@ -16,7 +16,7 @@
       <pubDate>06 Nov 2014</pubDate>
       <author>place_your_name_here</author>
       <guid>place_your_blog_url_here/mac%E5%B7%A5%E5%85%B7/2014/11/06/tool</guid>
-      <description>&lt;h2&gt;MAC - 命令行中用sublime打开指定文件&lt;/h2&gt;
+      <description>&lt;h2&gt;1.命令行打开指定应用&lt;/h2&gt;
 
 &lt;p&gt;在UNIX/linux命令行中打开一个应用（sublime）,可以执行如下命令：&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-vim&quot; data-lang=&quot;vim&quot;&gt; &lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; open &lt;span class=&quot;p&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/Applications/&lt;/span&gt;Sublime\ Text\ &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;.app &lt;span class=&quot;k&quot;&gt;sub&lt;/span&gt;.java
@@ -25,7 +25,22 @@
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-vim&quot; data-lang=&quot;vim&quot;&gt;ln &lt;span class=&quot;p&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/Applications/&lt;/span&gt;Sublime\ Text\ &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;.app&lt;span class=&quot;sr&quot;&gt;/Contents/&lt;/span&gt;SharedSupport&lt;span class=&quot;sr&quot;&gt;/bin/&lt;/span&gt;subl &lt;span class=&quot;sr&quot;&gt;/usr/&lt;/span&gt;local&lt;span class=&quot;sr&quot;&gt;/bin/&lt;/span&gt;subl
 
  &lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; subl &lt;span class=&quot;k&quot;&gt;sub&lt;/span&gt;.java
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;2.alias 使用&lt;/h2&gt;
+
+&lt;p&gt;创建一个存放shell脚本的目录&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-vim&quot; data-lang=&quot;vim&quot;&gt; &lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;shell&lt;/span&gt;
+ &lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;vim&lt;/span&gt; myworkspace.&lt;span class=&quot;k&quot;&gt;sh&lt;/span&gt;
+  添加内容：&lt;span class=&quot;k&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/Users/&lt;/span&gt;micx&lt;span class=&quot;sr&quot;&gt;/Projects/&lt;/span&gt;WorkSpace/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;修改home目录下的.zshrc(zsh), 其他shell可以找相应的文件添加如下内容:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-vim&quot; data-lang=&quot;vim&quot;&gt;wk&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;sh ~/shell/myworkspace.sh&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;使配置生效&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-vim&quot; data-lang=&quot;vim&quot;&gt;  &lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; source .zshrc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;使用wk命令即可切换到工作目录（/Users/micx/Projects/WorkSpace/）&lt;/p&gt;
+</description>
     </item>
     
     <item>
