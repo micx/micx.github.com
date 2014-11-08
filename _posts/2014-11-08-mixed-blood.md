@@ -28,20 +28,20 @@ CYJO生于华盛顿，成年后主要居住于纽约。她在北京与纽约的�
 
 大师的创作反应一种文化
 
-<img src="/assets/img/post_img/01.jpeg"  width="650" />
+<img src="/assets/img/post_img/01.JPEG"  width="650" />
 
-<img src="/assets/img/post_img/02.jpeg"  width="650" />
+<img src="/assets/img/post_img/02.JPEG"  width="650" />
 
-<img src="/assets/img/post_img/03.jpeg"  width="650" />
+<img src="/assets/img/post_img/03.JPEG"  width="650" />
 
-<img src="/assets/img/post_img/04.jpeg"  width="650" />
+<img src="/assets/img/post_img/04.JPEG"  width="650" />
 
-<img src="/assets/img/post_img/05.jpeg"  width="650" />
+<img src="/assets/img/post_img/05.JPEG"  width="650" />
 
-<img src="/assets/img/post_img/06.jpeg"  width="650" />
+<img src="/assets/img/post_img/06.JPEG"  width="650" />
 
-<img src="/assets/img/post_img/07.jpeg"  width="650" />
+<img src="/assets/img/post_img/07.JPEG"  width="650" />
 
-<img src="/assets/img/post_img/08.jpeg"  width="650" />
+<img src="/assets/img/post_img/08.JPEG"  width="650" />
 
-<img src="/assets/img/post_img/09.jpeg"  width="650" />
+<img src="/assets/img/post_img/09.JPEG"  width="650" />
