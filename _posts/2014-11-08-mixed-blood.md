@@ -1,11 +1,9 @@
 ---
 layout: post
-title: CYJO：Mixed Blood - 混血
+title: CYJO：混血
 category: 摄影
 published: true
 ---
-
-
 
 <img src="/assets/img/post_img/mixed_blood.jpg" />
 
