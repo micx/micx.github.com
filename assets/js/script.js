@@ -133,8 +133,7 @@ function afterPjax() {
   // http://jsfiddle.net/dragoncrew/SHGwe/1/
   var ds_loaded = false,
       top = $('#disqus_thread').offset().top;
-      // identifier = $('#post__title').data('identifier');
-      identifier = ${{ page.date | date: "%Y%m%d" }}
+      identifier = $('#post__title').data('identifier');
   window.disqus_shortname = 'micx0124';
   window.disqus_identifier = identifier;
 
