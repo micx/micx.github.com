@@ -1,9 +1,11 @@
 ---
 layout: post
-title: Mixed Blood 展
+title: CYJO：Mixed Blood - 混血
 category: 摄影
 published: true
 ---
+
+## [CYJO：混血](http://www.minshengart.com/Cnexh_news.aspx?id=39&year=2014)
 
 <img src="/assets/img/post_img/mixed_blood.jpg" />
 
