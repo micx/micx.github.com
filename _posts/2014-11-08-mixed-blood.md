@@ -5,13 +5,13 @@ category: 摄影
 published: true
 ---
 
-## [CYJO：混血](http://www.minshengart.com/Cnexh_news.aspx?id=39&year=2014)
+
 
 <img src="/assets/img/post_img/mixed_blood.jpg" />
 
 *	策展人：Nik Apostolides
 *	艺术家：CYJO
-*	主办：上海民生现代美术馆
+*	主办：[上海民生现代美术馆](http://www.minshengart.com/Cnexh_news.aspx?id=39&year=2014)
 *	协办：美国驻上海总领事馆
 
 ###	⊿ 关于艺术家
