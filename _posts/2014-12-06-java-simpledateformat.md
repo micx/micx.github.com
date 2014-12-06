@@ -1,5 +1,4 @@
 ---
----
 layout: post
 title: SimpleDateFormat的线程安全问题与解决方案
 category: java技术
@@ -319,3 +318,5 @@ thread: Thread[pool-2-thread-2,5,main] init pattern: yyyy-MM-dd
 2) 2个线程执行6个任务的时候也是同理,但是2个线程的sdf是分开的,每个线程都有自己的"yyyy-MM-dd", "yyyy-MM"的sdf,所以他们不会有线程安全安全问题
 
 试想,如果使用的是new的实现方法,那么不管是用1个线程去执行,还是用2个线程去执行这6个任务,都需要new 6个sdf
+
+
