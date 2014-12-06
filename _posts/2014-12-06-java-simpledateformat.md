@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SimpleDateFormat的线程安全问题与解决方案
+title: SimpleDateFormat的线程安全
 category: java技术
 published: true
 ---
