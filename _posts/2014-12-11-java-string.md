@@ -37,7 +37,7 @@ java.lang.StringBuilder一个可变的字符序列是5.0新增的。此类提供
 
 ## 测试
 
-```
+```java
 package com.demo.string;
 
 import com.google.common.base.Charsets;
@@ -100,14 +100,16 @@ public class StringTest {
     private static char getRandomChar(){
         return (char) random.nextLong();
     }
-}```
+}
+```
 
 运行结果：
 
-```
+```java
 String cost:	75011ms
 StringBuffer cost:	21ms
 StringBuilder cost:	17ms
 ```
+
 
 
