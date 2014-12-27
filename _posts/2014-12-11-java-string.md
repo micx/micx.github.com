@@ -1,6 +1,6 @@
 ---
 layout: post
-title: String/StringBuffer/StringBuilder
+title: String & StringBuffer & StringBuilder
 category: java技术
 published: true
 ---
