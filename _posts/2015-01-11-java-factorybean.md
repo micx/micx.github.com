@@ -70,3 +70,11 @@ public class Test {
     }
 }
 ```
+
+输出:
+
+```java
+class java.util.Date
+class java.lang.String
+class com.demo.factorybean.MyFactoryBean
+```
