@@ -389,7 +389,7 @@ a {
       max-width: 100%; } }
   @media screen and (max-width: 1280px) {
     #pjax {
-      max-width: 800px;
+      max-width: 1200px;
       margin: 0 auto; } }
 
 h1, h2, h3, h4, h5, h6 {
@@ -616,7 +616,7 @@ iframe {
     transform: translateX(-585px); } }
 
 #pjax.fullscreen {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto; }
 
 #js-fullscreen, #nprogress .spinner-icon {
