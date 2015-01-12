@@ -78,3 +78,11 @@ class java.util.Date
 class java.lang.String
 class com.demo.factorybean.MyFactoryBean
 ```
+
+注:
+
+如果希望获取MyFactoryBean实例，则需要在getBean(beanName)方法时在beanName前显示加上"&"前缀, 例如
+
+```
+factory.getBean("&factoryBeanTwo")
+```
