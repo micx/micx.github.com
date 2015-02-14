@@ -6,15 +6,13 @@ published: true
 ---
 
 
-##1. 创建 id_rsa_second和id_rsa_second.pub
+##1. 创建 id\_rsa\_second和id\_rsa\_second.pub
 
 用 ssh-keygen 命令生成一组新的id_rsa_new和id_rsa_new.pub
 
 ```bash
 ssh-keygen -t rsa -C 'second@mail.com' -f id_rsa_second 
 ```
-
-平时我们都是直接回车，默认生成id_rsa和id_rsa.pub。这里特别需要注意，出现提示输入文件名的时候要输入与默认配置不一样的文件名，比如： id_rsa_new。
 
 ##2. 配置~/.ssh/config文件
 
