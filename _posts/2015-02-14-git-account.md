@@ -6,9 +6,9 @@ published: true
 ---
 
 
-##1. 创建 id\_rsa\_second和id\_rsa\_second.pub
+##1. 创建rsa
 
-用 ssh-keygen 命令生成一组新的id_rsa_new和id_rsa_new.pub
+用 ssh-keygen 命令生成一组新rsa
 
 ```bash
 ssh-keygen -t rsa -C 'second@mail.com' -f id_rsa_second 
