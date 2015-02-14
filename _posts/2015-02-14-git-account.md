@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 多git账号配置
+title: git-多账号配置
 category: linux
 published: true
 ---
