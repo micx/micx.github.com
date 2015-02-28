@@ -138,4 +138,5 @@ Spring声明式事务管理机制非常强大，但它可能被误用或者容�
 
 
 参考文献：
-1. How does Spring @Transactional Really Work? URL:[http://www.javacodegeeks.com/2014/06/how-does-spring-transactional-really-work.html ]
+
+1. [How does Spring @Transactional Really Work?](http://www.javacodegeeks.com/2014/06/how-does-spring-transactional-really-work.html)
