@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Spring 方法内事务问题
+title: Spring @Transactional工作原理
 category: java技术
 published: true
 ---
