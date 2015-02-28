@@ -6,7 +6,7 @@ published: true
 ---
 
 
-##1. 问题
+##问题
 
 Spring @Transactional - 方法内调用事务方法，事务未生效
 
