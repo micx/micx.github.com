@@ -29,11 +29,11 @@ public class TransactionTest{
 	
 声明式事务管理主要包含三个组成部分：
 
-* __事务的切面__
+* _事务的切面_
 * EntityManager Proxy本身
 * 事务管理器
 
-问题就在于Spring的事务是通过__切面(AOP)__实现的，而[Spring AOP又是通过代理对象实现的(详见 6.6.1)](http://docs.spring.io/spring/docs/2.5.x/reference/aop.html)<sup>[2]<sup>
+问题就在于Spring的事务是通过_切面(AOP)_实现的，而[Spring AOP又是通过代理对象实现的(详见 6.6.1)](http://docs.spring.io/spring/docs/2.5.x/reference/aop.html)<sup>[2]<sup>
 
 因此，假设对于代理对象bean有如下的调用堆栈： 
 
@@ -49,6 +49,7 @@ bean.B() -> bean.C() -> ...
 
 所以回到刚开始的问题，Spring @Transactional - 方法a()调用事务方法b()，方法b()就不再是代理对象调用，方法b()就得不到增强，进而事务注解无法生效。
 
+***
 
 参考文献：
 
