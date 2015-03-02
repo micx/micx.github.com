@@ -24,8 +24,7 @@ Future接口提供方法来检测任务是否被执行完，等待任务执行�
 Future接口是一个泛型接口，严格的格式应该是Future<V>，其中V代表了Future执行的任务返回值的类型。 Future接口的方法介绍如下：
 
 * 
-```java 
-boolean cancel (boolean mayInterruptIfRunning)``` 取消任务的执行。参数指定是否立即中断任务执行，或者等等任务结束
+```boolean cancel (boolean mayInterruptIfRunning)``` 取消任务的执行。参数指定是否立即中断任务执行，或者等等任务结束
 * ```boolean isCancelled ()``` 任务是否已经取消，任务正常完成前将其取消，则返回 <font color="#009393">_true_</font>
 * ```boolean isDone ()```任务是否已经完成。需要注意的是如果任务正常终止、异常或取消，都将返回 <font color="#009393">_true_</font>
 * ```V get () throws InterruptedException, ExecutionException```  等待任务执行结束，然后获得V类型的结果。<font color="#009393">_InterruptedException_</font> 线程被中断异常， <font color="#009393">_ExecutionException_</font>任务执行异常，如果任务被取消，还会抛出<font color="#009393">_CancellationException_</font>
