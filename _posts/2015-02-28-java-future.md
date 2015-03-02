@@ -23,11 +23,11 @@ Future接口提供方法来检测任务是否被执行完，等待任务执行�
 
 Future接口是一个泛型接口，严格的格式应该是Future<V>，其中V代表了Future执行的任务返回值的类型。 Future接口的方法介绍如下：
 
-* ```boolean cancel (boolean mayInterruptIfRunning)``` 取消任务的执行。参数指定是否立即中断任务执行，或者等待任务结束
-* ```boolean isCancelled ()``` 任务是否已经取消，任务正常完成前将其取消，则返回 _true_
-* ```boolean isDone ()```任务是否已经完成。需要注意的是如果任务正常终止、异常或取消，都将返回 _true_
-* ```V get () throws InterruptedException, ExecutionException```  等待任务执行结束，然后获得V类型的结果。_InterruptedException _ 线程被中断异常， _ExecutionException_任务执行异常，如果任务被取消，还会抛出_CancellationException_
-* ```<font color="#009393">_V get (long timeout, TimeUnit unit) throws InterruptedException, ExecutionException, TimeoutException_</font>``` 同上面的 _get_ 功能一样，多了设置超时时间。参数timeout指定超时时间，_uint_ 指定时间的单位，在枚举类 _TimeUnit_ 中有相关的定义。如果计算超时，将抛出 _TimeoutException_
+* <font color="#009393">_```boolean cancel (boolean mayInterruptIfRunning)```_</font> 取消任务的执行。参数指定是否立即中断任务执行，或者等等任务结束
+* <font color="#009393">_```boolean isCancelled ()```_</font> 任务是否已经取消，任务正常完成前将其取消，则返回 _true_
+* <font color="#009393">_```boolean isDone ()```_</font>任务是否已经完成。需要注意的是如果任务正常终止、异常或取消，都将返回 _true_
+* <font color="#009393">_```V get () throws InterruptedException, ExecutionException```_</font>  等待任务执行结束，然后获得V类型的结果。_InterruptedException _ 线程被中断异常， _ExecutionException_任务执行异常，如果任务被取消，还会抛出_CancellationException_
+* <font color="#009393">_```V get (long timeout, TimeUnit unit) throws InterruptedException, ExecutionException, TimeoutException```_</font> 同上面的 _get_ 功能一样，多了设置超时时间。参数timeout指定超时时间，_uint_ 指定时间的单位，在枚举类 _TimeUnit_ 中有相关的定义。如果计算超时，将抛出 _TimeoutException_
 
 Future的实现类有java.util.concurrent.FutureTask<V>即 javax.swing.SwingWorker<T,V>。通常使用FutureTask来处理我们的任务。FutureTask类同时又实现了Runnable接口，所以可以直接提交给Executor执行。使用FutureTask实现超时执行的代码如下：
 
