@@ -29,7 +29,7 @@ public class TransactionTest{
     
 声明式事务管理主要包含三个组成部分：
 
-* _事务的切面_
+* <font color="#009393">_事务的切面_</font>
 * EntityManager Proxy本身
 * 事务管理器
 
