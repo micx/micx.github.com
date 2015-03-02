@@ -91,6 +91,4 @@ java.util.concurrent.TimeoutException
 
 参考文献：
 
-1. [How does Spring @Transactional Really Work?](http://www.javacodegeeks.com/2014/06/how-does-spring-transactional-really-work.html)
-
-2. [Aspect Oriented Programming with Spring](http://docs.spring.io/spring/docs/2.5.x/reference/aop.html)
+1. [Java™ Platform Standard Ed. 6 -- Future & FutureTask](http://docs.oracle.com/javase/6/docs/api/)
