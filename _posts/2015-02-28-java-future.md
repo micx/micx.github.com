@@ -49,7 +49,9 @@ public class FutureTest {
         executor.submit(futureTask);
         //other operations...
         try {
-            String result = futureTask.get(20000, TimeUnit.MILLISECONDS); //取得结果，同时设置超时执行时间为5秒。同样可以用future.get()，不设置执行超时时间取得结果
+            //取得结果，同时设置超时执行时间为5秒。同样可以用future.get()
+            //不设置执行超时时间取得结果
+            String result = futureTask.get(20000, TimeUnit.MILLISECONDS); 
             System.out.println(String.format("cost: %d ms",(System.currentTimeMillis() - startTime)));
             System.out.println(result);
         } catch (InterruptedException e) {
