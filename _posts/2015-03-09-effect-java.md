@@ -102,7 +102,67 @@ sum-2 cost: 1495ms
 
 同时，通过维护自己的***对象池(object pool)***来避免创建对象并不是一种好的做法，除非池中的***对象非常重量级***。真正正确使用对象池的典型对象示例就是***数据库连接池***。现代的JVM实现具有高度优化的垃圾回收器，其性能很容易超过轻量级的对象池的性能。
 
+##第6条 消除过期的对象引用
 
+考虑如下例子：
+
+```java
+public class Stack {
+    private Object[] elements;
+    private int size = 0;
+    private static final int DEFAULT_INITIAL_CAPACITY = 16;
+    
+    public Stack(){
+        elements = new Object[DEFAULT_INITIAL_CAPACITY];
+    }
+    
+    public void push(Object obj){
+        elements[size++] = obj;
+    }
+    
+    public Object pop(){
+        if(size == 0){
+            throw new EmptyStackException();
+        }
+        return elements[--size];
+    }
+    
+    private void ensureCapacity() {
+        if(elements.length == size){
+            elements = Arrays.copyOf(elements, 2*size+1);
+        }
+    }
+}
+```
+
+上述代码没有明显错误，但是隐藏着一个***"内存泄露"***的问题，如果一个栈先是增长，然后收缩，那么从栈中弹出来的对象将不会被当做垃圾回收，即使使用栈的程序不再引用这些对象，它们也不会被回收。
+
+在支持垃圾回收的语言中，内存泄露是很隐蔽的（这类内存泄露称为"***无意识的对象保持(unintentional object retention)***"）
+
+这类问题的修复方法很简单：***一旦对象引用已经过期，只需清空这些引用即可***。
+
+```java
+public Object pop(){
+    if(size == 0){
+        throw new EmptyStackException();
+    }
+    Object result = elements[--size];
+    elements[size] = null;
+    return result;
+}
+```
+
+清空引用的另一个好处是，如果它们以后又被错误的解除引用，程序就会抛出NPE异常，而不是悄悄的错误运行下去。
+
+一般而言，常见内存泄露：
+
+* 只要是程序员自己管理的内存，就应该警惕内存泄露问题。一旦元素被释放，则该元素中包含的任何对象引用都应该被清空。
+
+* 内存泄露另一个常见来源是缓存。
+
+* 第三个常见来源是监听器和其他回调。
+
+内存泄露分析工具(Heap Profiler)
 
 ***
 
