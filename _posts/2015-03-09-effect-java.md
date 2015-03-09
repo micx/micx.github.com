@@ -25,7 +25,7 @@ String s = new String("string test");
 String s = "string test";
 ```
 
-改版本只用了一个String实例，而不是每次执行都创建一个新的实例。 而且，它可以保证，对于所有在同一台虚拟机中运行的代码，只要它们包含相同的字符串字面常量，该对象就会被重用[JLS, 3.10.5](http://docs.oracle.com/javase/specs/jls/se7/html/jls-3.html#jls-3.10.5)
+该版本只用了一个String实例，而不是每次执行都创建一个新的实例。 而且，它可以保证，对于所有在同一台虚拟机中运行的代码，只要它们包含相同的字符串字面常量，该对象就会被重用[[JLS, 3.10.5](http://docs.oracle.com/javase/specs/jls/se7/html/jls-3.html#jls-3.10.5)]
 
 ```java
 class Test {
