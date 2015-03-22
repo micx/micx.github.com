@@ -367,6 +367,26 @@ treeSet:    1
     }
 ```
 
+## 第38条 检查参数有效性
+
+传递无效的参数给方法，方法在执行之前要对参数进行检查，若不合法应快速失败。
+
+对于公有方法，要用Javadoc的@throws标签(tag)在文档中说明违反参数值限制时会抛出的异常(见62条)。这样的异常通常为IllegalArgumentException、IndexOutOfBoundsException或NullPointerException（见60条）。
+
+```java
+/**
+ * ...
+ * @return
+ * @throws java.lang.Exception if ...
+ */
+public Integer pop(){
+    Integer tmp = stack.pop();
+    if(tmp > 0){
+        maxValue = stack.peek();
+    }
+    return tmp;
+}
+```
 
 
 
