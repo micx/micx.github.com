@@ -68,7 +68,7 @@ beancontext1.xml
         <property name="name" value="beancontext1" />  
     </bean>  
 </beans>  
-```java
+```
 
 beancontext2.xml
 
@@ -98,8 +98,11 @@ public static void main(String[] args) {
     System.out.println(bean.getName());  
 }  
 ```
+
  执行这个程序你会看见控制台上打印的结果是：
+
 beancontext2
+
 显然，beancontext2.xml的bean的配置覆盖了 beancontext1.xml中bean的配置，而且在spring初始化上下文的过程中这个过程是静悄悄的执行的，连一点警告都没有。这样如果你的项目中定义了两个id同名的bean，并且，他们的实现方式又是不一样的，这样在后期在项目中执行的逻辑看起来就会非常诡异，而且，如果有大量配置spring配置文件的话，排查问题就会非常麻烦。
 
 spring在处理有重名的bean的定义的时候使用的覆盖（override）的方式。我们来看看它是如何覆盖的
