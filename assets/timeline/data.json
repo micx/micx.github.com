@@ -22,7 +22,7 @@
                 {
                     "media":"/assets/img/timeline/dlut.jpg",
                     "thumbnail":"optional-32x32px.jpg",
-                    "credit":"<a href='http://www.dlut.edu.cn/'>www.dlut.edu.cn/</a>",
+                    "credit":"<a href='http://www.dlut.edu.cn/'>www.dlut.edu.cn</a>",
                     "caption":"Caption text goes here"
                 }
             },
@@ -34,7 +34,7 @@
                 "asset":
                 {
                     "media":"/assets/img/timeline/sjtu.jpg",
-                    "credit":"<a href='http://www.sjtu.edu.cn/'>www.sjtu.edu.cn/</a>",
+                    "credit":"<a href='http://www.sjtu.edu.cn/'>www.sjtu.edu.cn</a>",
                     "caption":""
                 }
             },
@@ -44,8 +44,8 @@
                 "text":"work as Java Developer",
                 "asset":
                 {
-                    "media":"http://dribbble.com/system/users/13307/screenshots/366400/chameleon.jpg?1328028363",
-                    "credit":"",
+                    "media":"/assets/img/timeline/dp.jpg",
+                    "credit":"<a href='http://www.dianping.com'>www.dianping.com</a>",
                     "caption":""
                 }
             }
