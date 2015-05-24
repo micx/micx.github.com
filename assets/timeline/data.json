@@ -20,7 +20,7 @@
                 "text":"My College life start ",
                 "asset":
                 {
-                    "media":"http://dribbble.com/system/users/14521/screenshots/228267/proto_v4_decoupe_2.png?1324546898",
+                    "media":"/assets/img/timeline/dlut.jpg",
                     "thumbnail":"optional-32x32px.jpg",
                     "credit":"<a href='http://www.dlut.edu.cn/'>www.dlut.edu.cn/</a>",
                     "caption":"Caption text goes here"
@@ -33,7 +33,7 @@
                 "text":"Master",
                 "asset":
                 {
-                    "media":"http://dribbble.com/system/users/5977/screenshots/401334/sidebar_s3.png?1327615765",
+                    "media":"/assets/img/timeline/sjtu.jpg",
                     "credit":"<a href='http://www.sjtu.edu.cn/'>www.sjtu.edu.cn/</a>",
                     "caption":""
                 }
