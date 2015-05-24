@@ -20,7 +20,7 @@
                 "text":"My College life start ",
                 "asset":
                 {
-                    "media":"/assets/img/timeline/dlut.jpg",
+                    "media":"/assets/img/timeline/dlut.png",
                     "thumbnail":"optional-32x32px.jpg",
                     "credit":"<a href='http://www.dlut.edu.cn/'>www.dlut.edu.cn</a>",
                     "caption":"Caption text goes here"
@@ -33,7 +33,7 @@
                 "text":"Master",
                 "asset":
                 {
-                    "media":"/assets/img/timeline/sjtu.jpg",
+                    "media":"/assets/img/timeline/sjtu.png",
                     "credit":"<a href='http://www.sjtu.edu.cn/'>www.sjtu.edu.cn</a>",
                     "caption":""
                 }
@@ -44,7 +44,7 @@
                 "text":"work as Java Developer",
                 "asset":
                 {
-                    "media":"/assets/img/timeline/dp.jpg",
+                    "media":"/assets/img/timeline/dp.png",
                     "credit":"<a href='http://www.dianping.com'>www.dianping.com</a>",
                     "caption":""
                 }
