@@ -2,9 +2,9 @@
 {
     "timeline":
     {
-        "headline":"Johnny B Goode",
+        "headline":"chenxi.chen",
         "type":"default",
-		"startDate":"2009,1",
+		"startDate":"2007,9",
 		"text":"<i><span class='c1'>Designer</span> & <span class='c2'>Developer</span></i>",
 		"asset":
         {
@@ -14,10 +14,10 @@
         },
         "date": [
             {
-                "startDate":"2009,2,01",
-                "endDate":"2009,2,11,08,11",
-                "headline":"My first experiment in time-lapse photography",
-                "text":"Nature at its finest in this video.",
+                "startDate":"2007,09,01",
+                "endDate":"2011,6,11",
+                "headline":"Dalian University Of Technology",
+                "text":"My College life start ",
                 "asset":
                 {
                     "media":"http://dribbble.com/system/users/14521/screenshots/228267/proto_v4_decoupe_2.png?1324546898",
