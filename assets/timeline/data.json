@@ -5,7 +5,7 @@
         "headline":"chenxi.chen",
         "type":"default",
 		"startDate":"2007,9",
-		"text":"<i><span class='c1'>Designer</span> & <span class='c2'>Developer</span></i>",
+		"text":"<i><span class='c1'>Developer</span> & <span class='c2'>Learning</span></i>",
 		"asset":
         {
             "media":"assets/img/notes.png",
@@ -22,25 +22,25 @@
                 {
                     "media":"http://dribbble.com/system/users/14521/screenshots/228267/proto_v4_decoupe_2.png?1324546898",
                     "thumbnail":"optional-32x32px.jpg",
-                    "credit":"Credit Name Goes Here",
+                    "credit":"<a href='http://www.dlut.edu.cn/'>www.dlut.edu.cn/</a>",
                     "caption":"Caption text goes here"
                 }
             },
             {
-                "startDate":"2009,5",
-                "headline":"Redesign of my portfolio",
-                "text":"",
+                "startDate":"2011,9",
+                "headline":"Shanghai Jiao Tong University",
+                "text":"Master",
                 "asset":
                 {
                     "media":"http://dribbble.com/system/users/5977/screenshots/401334/sidebar_s3.png?1327615765",
-                    "credit":"<a href='http://dribbble.com/shots/401334-Sidebar'>by Chris Brauckmuller</a>",
+                    "credit":"<a href='http://www.sjtu.edu.cn/'>www.sjtu.edu.cn/</a>",
                     "caption":""
                 }
             },
             {
-                "startDate":"2009,7",
-                "headline":"Another time-lapse experiment",
-                "text":"",
+                "startDate":"2014,4",
+                "headline":"DianPing.com",
+                "text":"work as Java Developer",
                 "asset":
                 {
                     "media":"http://dribbble.com/system/users/13307/screenshots/366400/chameleon.jpg?1328028363",
