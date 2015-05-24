@@ -15,7 +15,7 @@
         "date": [
             {
                 "startDate":"2007,09,01",
-                "endDate":"2011,6,11",
+                "endDate":"2011,6,01",
                 "headline":"Dalian University Of Technology",
                 "text":"My College life start ",
                 "asset":
@@ -27,7 +27,8 @@
                 }
             },
             {
-                "startDate":"2011,9",
+                "startDate":"2011,9,01",
+                "endDate":"2014,4,01",
                 "headline":"Shanghai Jiao Tong University",
                 "text":"Master",
                 "asset":
@@ -38,7 +39,7 @@
                 }
             },
             {
-                "startDate":"2014,4",
+                "startDate":"2014,4,07",
                 "headline":"DianPing.com",
                 "text":"work as Java Developer",
                 "asset":
