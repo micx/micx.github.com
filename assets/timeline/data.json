@@ -4,7 +4,7 @@
     {
         "headline":"chenxi.chen",
         "type":"default",
-		"startDate":"2007,09",
+		"startDate":"2007,9",
 		"text":"<i><span class='c1'>Thinking</span> @ <span class='c2'>Interesting</span></i>",
 		"asset":
         {
@@ -14,8 +14,8 @@
         },
         "date": [
             {
-                "startDate":"2007,09,01",
-                "endDate":"2011,06,23",
+                "startDate":"2007,9,1",
+                "endDate":"2011,6,23",
                 "headline":"Dalian University Of Technology",
                 "text":"B.E. 2007/09/01 - 2011/06/23, Dalian, China, Software Engineer",
                 "asset":
@@ -27,8 +27,8 @@
                 }
             },
             {
-                "startDate":"2011,09,01",
-                "endDate":"2014,04,01",
+                "startDate":"2011,9,1",
+                "endDate":"2014,4,1",
                 "headline":"Shanghai Jiao Tong University",
                 "text":"M.E. 2011/09/01 - 2014/04/01, Shanghai, China, Software Engineer",
                 "asset":
@@ -39,7 +39,7 @@
                 }
             },
             {
-                "startDate":"2014,04,07",
+                "startDate":"2014,4,7",
                 "headline":"DianPing.com",
                 "text":" waimai & yuding  Department, DianPing",
                 "asset":
